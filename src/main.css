@@ -1,0 +1,165 @@
+html {
+  height: 100vh;
+  width: auto;
+}
+body {
+  text-align: center;
+  min-height: 100vh;
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  background-color: yellow;
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  position: absolute;
+  left: 25px;
+  padding: 15px;
+}
+
+.DirectoryOfAlbums {
+  text-align: center;
+  min-height: 100vh;
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin-top: 0;
+  background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow:1;
+  justify-content: space-around;
+}
+
+.imageGallery {
+  height: 300px;
+  width: 200px;
+  background-image: url('./baby.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery {
+  margin-top: 50px;
+  width: 33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descriptions {
+  background-color: transparent;
+  margin-top: 0;
+  font-size: 1.25em;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+ footer {
+  background-color: green;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  border: 5px solid black;
+}
+
+.footerLogo {
+  background-image: url('./baby.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.album{
+  display: flex;
+  flex-wrap: nowrap;
+  border: 2px solid yellow;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: red;
+  border: 3px solid orange;
+  justify-content: center;
+}
+
+.sidebarNavListItems {
+  margin-top: 75px;
+  margin-right: 25px;
+  padding: 0px 25px;
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+}
+button {
+  width: 150px;
+  height: 50px;
+  font-size: 1em;
+  border-radius: 8px;
+  background-color: white;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 3px solid lightblue;
+  justify-content: center;
+}
+
+.galleryOfImages {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border: 5px solid black;
+  justify-content: space-around;
+  max-height: 75%;
+  flex-grow: 1;
+}
+
+.galleryImage {
+  margin: 10px;
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galleryHead {
+  font-size: 3em;
+  margin: 0;
+  position: absolute;
+  top:25px;
+  align-self: center;
+}
+
+.bigImage {
+  background-image: url('./baby.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
