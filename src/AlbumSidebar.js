@@ -24,5 +24,4 @@ class AlbumSidebar extends Component {
     </div>
   }
 }
-
 export default AlbumSidebar
