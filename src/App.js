@@ -10,7 +10,7 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      currentScreen: 'photo',
+      currentScreen: 'album',
       albums: albumsInfo.album,
       currentAlbum: albumsInfo.album[1]
     }
@@ -31,7 +31,7 @@ render () {
           break;
         case 'photo': screen = <SinglePhotoView navigate={this.navigateTo} currentAlbum={this.state.currentAlbum} />
           break;
-        default: screen = <DirectoryOfAlbums />
+        default: screen = <DirectoryOfAlbums navigate={this.navigateTo} albums={this.state.albums} />
       }
 
       return <div className="App">

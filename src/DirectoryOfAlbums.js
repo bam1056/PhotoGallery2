@@ -9,12 +9,12 @@ class DirectoryOfAlbums extends Component {
         <h1>My Albums</h1>
       </header>
       <main>
-        <DirAlbumImageLink albumInfo={this.props.albums[0]} />
-        <DirAlbumImageLink albumInfo={this.props.albums[1]} />
-        <DirAlbumImageLink albumInfo={this.props.albums[2]} />
-        <DirAlbumImageLink albumInfo={this.props.albums[3]} />
-        <DirAlbumImageLink albumInfo={this.props.albums[4]} />
-        <DirAlbumImageLink albumInfo={this.props.albums[5]} />
+        <DirAlbumImageLink albumInfo={this.props.albums[0]} navigate={this.props.navigate} />
+        <DirAlbumImageLink albumInfo={this.props.albums[1]} navigate={this.props.navigate} />
+        <DirAlbumImageLink albumInfo={this.props.albums[2]} navigate={this.props.navigate} />
+        <DirAlbumImageLink albumInfo={this.props.albums[3]} navigate={this.props.navigate} />
+        <DirAlbumImageLink albumInfo={this.props.albums[4]} navigate={this.props.navigate} />
+        <DirAlbumImageLink albumInfo={this.props.albums[5]} navigate={this.props.navigate} />
       </main>
     </div>
   }

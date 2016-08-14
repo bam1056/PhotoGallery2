@@ -1,23 +1,24 @@
 import React, { Component } from 'react'
 import './main.css'
+import AlbumSidebarButton from './AlbumSidebarButton'
 
 class AlbumSidebar extends Component {
-  navigateToNewAlbum = (e) => {
+  navigateHome = (e) => {
     e.preventDefault()
-    this.props.navigate('home', this.props.album)
+    this.props.navigate('home', this.props.albums[0])
   }
 
-  render() {
-    return  <div className='sidebar'>
+  render () {
+    return <div className='sidebar'>
     <nav className='sidebarNav'>
       <ul className='sidebarNavList'>
-        <li className='sidebarNavListItems'><button onClick={this.navigateToNewAlbum} type='button' name='button'>Album 1</button></li>
-        <li className='sidebarNavListItems'><button onClick={this.navigateToAlbum} type='button' name='button'>Album 2</button></li>
-        <li className='sidebarNavListItems'><button type='button' name='button'>Album 3</button></li>
-        <li className='sidebarNavListItems'><button type='button' name='button'>Album 4</button></li>
-        <li className='sidebarNavListItems'><button type='button' name='button'>Album 5</button></li>
-        <li className='sidebarNavListItems'><button type='button' name='button'>Album 6</button></li>
-        <li className='sidebarNavListItems'><button type='button' name='button'>Home</button></li>
+        <AlbumSidebarButton navigate={this.props.navigate} album={this.props.albums[0]} />
+        <AlbumSidebarButton navigate={this.props.navigate} album={this.props.albums[1]} />
+        <AlbumSidebarButton navigate={this.props.navigate} album={this.props.albums[2]} />
+        <AlbumSidebarButton navigate={this.props.navigate} album={this.props.albums[3]} />
+        <AlbumSidebarButton navigate={this.props.navigate} album={this.props.albums[4]} />
+        <AlbumSidebarButton navigate={this.props.navigate} album={this.props.albums[5]} />
+        <li className='sidebarNavListItems'><button onClick={this.navigateHome} type='button' name='button'>Home</button></li>
       </ul>
     </nav>
     </div>
