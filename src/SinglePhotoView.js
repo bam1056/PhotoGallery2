@@ -9,7 +9,7 @@ class SinglePhotoView extends Component {
   render () {
     return <div className='SinglePhotoView'>
       <header>
-        <span><button onClick={this.navigateBackToAlbum} type='button' name='button'>Back to {this.props.currentAlbum.name}</button></span><h1>{this.props.currentImage.name}</h1>
+        <button className='specialButton' onClick={this.navigateBackToAlbum} type='button' name='button'>Back to {this.props.currentAlbum.name}</button><h1>{this.props.currentImage.name}</h1>
       </header>
       <main>
         <div className='bigImageContainer'>
