@@ -27,12 +27,7 @@ header{
   font-family: fantasy;
   font-size: 2em;
   padding: 0;
-}
-
-span {
-  position: absolute;
-  left: 25px;
-  padding: 15px;
+  border-radius: 10px;
 }
 
 .DirectoryOfAlbums {
@@ -73,6 +68,7 @@ main {
   margin-top: 0;
   font-size: 1.25em;
   color: white;
+  font-family: fantasy;
 }
 
 h4 {
@@ -86,7 +82,7 @@ footer {
   background-color: #CCAE96;
   opacity: .5;
   padding: 0;
-  margin: 10px;
+  margin: 15px;
 }
 
 .footerLogo {
@@ -109,6 +105,10 @@ footer {
   flex-direction: column;
   text-align: left;
   justify-content: center;
+  background-color: rgb(84, 62, 49);
+  opacity: 0.85;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 .sidebarNavListItems {
@@ -127,7 +127,7 @@ button {
   background-color: #C15F25;
 }
 button.specialButton {
-  margin-left: 25px;
+  margin-left: 100px;
   position: absolute;
   left: 0px;
 }
@@ -157,7 +157,8 @@ article {
 }
 
 .galleryHead {
-  font-size: 3em;
+  font-family: fantasy;
+  font-size: 4em;
   margin: 0;
   position: absolute;
   top:25px;
@@ -171,6 +172,7 @@ article {
   background-size: contain;
   margin-top: 50px;
   margin-bottom: 50px;
+  border: 5px solid black;
 }
 .SinglePhotoView {
   width: 100%;
